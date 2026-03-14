@@ -1,16 +1,117 @@
-# React + Vite
+# 📸 Photo Gallery Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Photo Gallery Web Application** built using **React, Vite, and Tailwind CSS**.
+This app fetches images from the **Picsum Photos API** and displays them in a clean, responsive grid layout.
 
-Currently, two official plugins are available:
+Users can search photos by photographer name and mark their favorite photos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🔍 **Search Photos** by photographer name
+* ❤️ **Favorite Photos** using React `useReducer`
+* ⚡ **Fast Performance** with `useMemo` and `useCallback`
+* 🖼️ **Responsive Image Grid Layout**
+* 🎨 **Modern UI Design with Tailwind CSS**
+* 📱 **Fully Responsive (Mobile, Tablet, Desktop)**
+* 🌄 **Dynamic Images from Picsum API**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+* **React**
+* **Vite**
+* **Tailwind CSS**
+* **JavaScript (ES6+)**
+* **Picsum Photos API**
+
+---
+
+## 📂 Project Structure
+
+```
+photo-gallery
+│
+├── src
+│   ├── components
+│   │   ├── Gallery.jsx
+│   │   └── PhotoCard.jsx
+│   │
+│   ├── hooks
+│   │   └── useFetchPhotos.js
+│   │
+│   ├── reducer
+│   │   └── favouriteReducer.js
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/JATINSINGH514/photo-gallery-app.git
+```
+
+Go to the project folder:
+
+```
+cd photo-gallery-app
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start the development server:
+
+```
+npm run dev
+```
+
+Open the browser and visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌐 API Used
+
+This project uses the **Picsum Photos API**:
+
+```
+https://picsum.photos/v2/list?limit=30
+```
+
+It provides random images and photographer information.
+
+
+---
+
+## 📈 Future Improvements
+
+* Masonry gallery layout (Pinterest style)
+* Image modal preview
+* Download photo feature
+* User authentication
+* Infinite scrolling
+
+---
+
+## 👨‍💻 Author
+
+**Jatin Singh**
